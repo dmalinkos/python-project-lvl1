@@ -1,4 +1,4 @@
 <a href="https://codeclimate.com/github/dmalinkos/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/b0ee4c0fe376233b6a47/maintainability" /></a>
 <a href="https://codeclimate.com/github/dmalinkos/python-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b0ee4c0fe376233b6a47/test_coverage" /></a>
 [![Build Status](https://travis-ci.com/dmalinkos/python-project-lvl1.svg?branch=master)](https://travis-ci.com/dmalinkos/python-project-lvl1)
-https://asciinema.org/a/ViIGXFyRBOEgaoS9QxRLyeNIq
+<a href="https://asciinema.org/a/ViIGXFyRBOEgaoS9QxRLyeNIq?autoplay=1" target="_blank"><img src="https://asciinema.org/a/ViIGXFyRBOEgaoS9QxRLyeNIq.svg" /></a>
