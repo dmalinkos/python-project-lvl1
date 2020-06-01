@@ -1,8 +1,13 @@
 import brain_games.games.even as even
+import brain_games.engine as engine
+
+
+STEPS = 3
+MAX_NUMBER = 100
 
 
 def main():
-    even.game_even()
+    engine.core(even.game_even(STEPS, MAX_NUMBER), STEPS)
 
 
 if __name__ == '__main__':

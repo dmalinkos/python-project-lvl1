@@ -1,28 +1,14 @@
-import brain_games.cli as cli
-import random
+from random import randint
 
 
-def game_even():
-    print('Welcome to the Brain Games!')
-    print('Answer "yes" if number even otherwise answer "no".\n')
-    name = cli.welcome_user()
-    step_for_win = 3
-    for step in range(step_for_win):
-        num = random.randint(0, 100)
-        print(f'Question: {num}')
-        ans = cli.get_answer()
-        if num % 2 == 0:
-            if ans != 'yes':
-                print(f"'{ans}' is wrong answer ;(. Correct answer was 'yes'.")
-                print("Let's try again, Bill!")
-                return False
-            else:
-                print('Correct!')
-        if num % 2 == 1:
-            if ans != 'no':
-                print(f"'{ans}' is wrong answer ;(. Correct answer was 'no'.")
-                print(" Let's try again, Bill!")
-                return False
-            else:
-                print('Correct!')
-    print(f'Congratulations, {name}!')
+def game_even(STEPS, MAX_NUMBER):
+    rule = 'Answer "yes" if number even otherwise answer "no".'
+    quest = [0 for i in range(STEPS)]
+    result = [0 for i in range(STEPS)]
+    for step in range(STEPS):
+        quest[step] = randint(1, MAX_NUMBER)
+        if quest[step] % 2 == 0:
+            result[step] = 'yes'
+        else:
+            result[step] = 'no'
+    return rule, quest, result
