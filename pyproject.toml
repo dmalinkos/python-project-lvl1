@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dmalinkos_brain_games"
-version = "0.5.0"
+version = "0.7.0"
 description = ""
 authors = ["Dmitriy Malinovskiy <dmalinkos@gmail.com>"]
 packages = [
@@ -12,6 +12,8 @@ brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"

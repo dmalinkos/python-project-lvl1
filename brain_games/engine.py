@@ -1,7 +1,7 @@
 import brain_games.cli as cli
 
 
-def core(game, STEPS):
+def core(game, STEPS=1):
     rule = game[0]
     quest = game[1]
     res = game[2]
