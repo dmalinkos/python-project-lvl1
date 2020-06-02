@@ -1,10 +1,14 @@
 [tool.poetry]
 name = "dmalinkos_brain_games"
 version = "0.7.0"
-description = ""
+description = "Mini-games for brain training"
 authors = ["Dmitriy Malinovskiy <dmalinkos@gmail.com>"]
 packages = [
   { include = "brain_games" },
+]
+repository = "https://github.com/dmalinkos/python-project-lvl1"
+classifiers = [
+  "Topic :: Games/Entertainment :: Puzzle Games"
 ]
 
 [tool.poetry.scripts]
