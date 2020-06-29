@@ -1,9 +1,8 @@
-import brain_games.games.progression as progression
-import brain_games.engine as engine
+from brain_games import games, engine
 
 
 def main():
-    engine.core(progression)
+    engine.core(games.progression)
 
 
 if __name__ == '__main__':

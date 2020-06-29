@@ -1,12 +1,11 @@
-import brain_games.games.gcd as gcd
-import brain_games.engine as engine
+from brain_games import games, engine
 
 
 MAX_NUMBER = 100
 
 
 def main():
-    engine.core(gcd)
+    engine.core(games.gcd)
 
 
 if __name__ == '__main__':

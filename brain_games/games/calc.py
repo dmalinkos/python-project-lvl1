@@ -2,8 +2,9 @@ from random import randint, choice
 from operator import add, sub, mul
 
 
-RULES = 'What is the result of the expression?' 
+RULES = 'What is the result of the expression?'
 MAX_NUMBER = 100
+
 
 def new_game():
     a, b = randint(1, MAX_NUMBER), randint(1, MAX_NUMBER)

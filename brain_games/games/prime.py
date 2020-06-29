@@ -4,6 +4,7 @@ from random import randint
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MAX_NUMBER = 100
 
+
 def isprime(n):
     d = 2
     while (n // 2) % d != 0:

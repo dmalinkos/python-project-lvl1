@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dmalinkos_brain_games"
-version = "0.7.0"
+version = "0.7.2"
 description = "Mini-games for brain training"
 authors = ["Dmitriy Malinovskiy <dmalinkos@gmail.com>"]
 packages = [
