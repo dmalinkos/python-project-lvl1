@@ -1,13 +1,9 @@
 import brain_games.games.prime as prime
-from brain_games.engine import core
-
-
-STEPS = 3
-MAX_NUMBER = 10000
+import brain_games.engine as engine
 
 
 def main():
-    core(prime.game_prime(STEPS, MAX_NUMBER), STEPS)
+    engine.core(prime)
 
 
 if __name__ == '__main__':

@@ -1,13 +1,9 @@
 import brain_games.games.progression as progression
-from brain_games.engine import core
-
-
-STEPS = 3
-MAX_NUMBER = 50
+import brain_games.engine as engine
 
 
 def main():
-    core(progression.game_progression(STEPS, MAX_NUMBER), STEPS)
+    engine.core(progression)
 
 
 if __name__ == '__main__':

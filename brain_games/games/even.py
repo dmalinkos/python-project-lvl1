@@ -1,14 +1,14 @@
 from random import randint
 
 
-def game_even(STEPS, MAX_NUMBER):
-    rule = 'Answer "yes" if number even otherwise answer "no".'
-    quest = [0 for i in range(STEPS)]
-    result = [0 for i in range(STEPS)]
-    for step in range(STEPS):
-        quest[step] = randint(1, MAX_NUMBER)
-        if quest[step] % 2 == 0:
-            result[step] = 'yes'
-        else:
-            result[step] = 'no'
-    return rule, quest, result
+RULES = 'Answer "yes" if number even otherwise answer "no".'
+MAX_NUMBER = 100
+
+
+def new_game():
+    quest = randint(1, MAX_NUMBER)
+    if quest % 2 == 0:
+        res = 'yes'
+    else:
+        res = 'no'
+    return quest, res

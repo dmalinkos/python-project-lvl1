@@ -1,19 +1,21 @@
 import brain_games.cli as cli
 
 
-def core(game, STEPS=1):
-    rule = game[0]
-    quest = game[1]
-    res = game[2]
+STEPS = 3
+
+
+def core(game):
     print('Welcome to the Brain Games!')
-    print(rule + '\n')
+    print(game.RULES + '\n')
     name = cli.welcome_user()
+    print(f'Hello, {name}!')
     for step in range(STEPS):
-        print(f'Question: {quest[step]}')
+        quest, res = game.new_game()
+        print(f'Question: {quest}')
         ans = cli.get_answer()
-        if ans != res[step]:
+        if ans != res:
             print(f"'{ans}' is wrong answer ;(.", end='')
-            print(f"Correct answer was '{res[step]}'.")
+            print(f"Correct answer was '{res}'.")
             print(f"Let's try again, {name}!")
             return False
         else:

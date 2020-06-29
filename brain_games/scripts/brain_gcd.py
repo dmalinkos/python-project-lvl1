@@ -1,13 +1,12 @@
 import brain_games.games.gcd as gcd
-from brain_games.engine import core
+import brain_games.engine as engine
 
 
-STEPS = 3
 MAX_NUMBER = 100
 
 
 def main():
-    core(gcd.game_gcd(STEPS, MAX_NUMBER), STEPS)
+    engine.core(gcd)
 
 
 if __name__ == '__main__':
